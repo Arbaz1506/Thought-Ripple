@@ -32,8 +32,8 @@
 
 ## 🔗 Links
 
-- 🔴 [GitHub Repo](https://github.com/Arbaz1506/ThoughtRipple)  
-- 🌐 [Live Demo](https://your-live-site.vercel.app) <!-- Replace with your actual link -->
+- 🔴 [GitHub Repo](https://github.com/Arbaz1506/Thought-Ripple)  
+- 🌐 [Live Demo](https://arbaz1506.github.io/Thought-Ripple/) <!-- Replace with your actual link -->
 
 ---
 
