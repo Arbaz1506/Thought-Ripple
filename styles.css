@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top left, #1A1A2E, #16213E);
+    color: #E8E8E8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#wrapper {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    width: 95%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+#quote-text {
+    font-size: 1.8rem;
+    color: #F5F5F5;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 0 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+#quote-text::before,
+#quote-text::after {
+    content: "❝";
+    font-size: 2rem;
+    color: #3F72AF;
+    position: absolute;
+}
+
+#quote-text::before {
+    left: -15px;
+    top: -10px;
+}
+
+#quote-text::after {
+    content: "❞";
+    right: -15px;
+    bottom: -10px;
+}
+
+#author {
+    font-size: 1rem;
+    color: #AAB4C2;
+    margin-bottom: 2rem;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+
+button {
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, #3F72AF, #5B9BD5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(63, 114, 175, 0.3);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(91, 155, 213, 0.4);
+}
+
+#loader {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #E0E0E0;
+    display: none;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+#title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.divider {
+    width: 100px;
+    margin: 1rem auto 2rem;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #3F72AF, #5B9BD5);
+    border-radius: 10px;
+}
+
+#subtitle {
+    font-size: 1rem;
+    color: #B0B0B0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.fade {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
